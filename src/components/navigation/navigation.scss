@@ -1,0 +1,35 @@
+@import "../../styles/base.scss";
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    padding: 15px 35px 0 35px;
+    z-index: 2;
+    background-color: $dark-grey-box-color;
+    border-radius: 0 0 15px 0;
+    transition: all .3s;
+
+    div{
+        float: right;
+        
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        width: 45.8%;
+        top: 15px;
+        height: 85px;
+
+        &.wideNav{
+            width: 100%;
+            top: 0;
+            height: 60px;
+        }
+    }
+}

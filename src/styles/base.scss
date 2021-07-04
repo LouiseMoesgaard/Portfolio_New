@@ -1,0 +1,84 @@
+/** Fonts **/
+@import './fonts/fonts.scss';
+
+$h1-font: "playfair_display";
+$p-font: "montserrat"; 
+
+/** Colors **/
+
+$font-white-color: #ffffff;
+$font-black-color: #5C5451;
+$font-blue-color: #15515E;
+$call-to-action-color1: #15515E;
+$call-to-action-color2: #EE9A0A;
+$light-grey-box-color: #E2E3E2;
+$dark-grey-box-color: #615F5F;
+$bg-white:#ffffff;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-white;
+}
+
+.hide {
+  display: none !important;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid $call-to-action-color2;
+}
+
+/*** Mixins **/
+
+@mixin page-padding-mobile {
+  padding: 70px 30px 0px 30px;
+}
+
+@mixin page-padding-tablet {
+  padding: 105px 35px 35px 35px;
+}
+
+@mixin page-padding-desktop-mini {
+  padding: 40px 12% 40px 12%;
+}
+
+@mixin page-padding-desktop-large {
+  padding: 105px 26% 40px 26%;
+}
+
+.content {
+  @include page-padding-mobile;
+}
+
+
+.greybox {
+  padding: 30px;
+  background-color: $light-grey-box-color;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 2560px) {
+
+}

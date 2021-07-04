@@ -1,0 +1,78 @@
+@import '../styles/base.scss';
+
+h1,
+h2 {
+  font-family: $h1-font;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $font-black-color;
+  text-align: center;
+  color: $font-blue-color;
+}
+
+span {
+  font-family: $h1-font;
+  /* font-size: 1.2rem; */
+  text-transform: uppercase;
+  color: $font-white-color;
+
+}
+
+p,
+li {
+  font-family: $p-font;
+  line-height: 20px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: $font-black-color;
+}
+
+.desc{
+  text-align: center;
+  color: $font-blue-color;
+
+}
+
+a {
+  font-family: $h1-font;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: $font-white-color;
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  h1,
+  h2 {
+    font-size: 2.4rem;
+    margin: 37px;
+
+  }
+
+  p,
+  li {
+    line-height: 29px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+  }
+
+  span {
+    font-size: 1rem;
+  
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  .desc{
+    width: 50%;
+    margin: 0 auto;
+}
+
+}
+

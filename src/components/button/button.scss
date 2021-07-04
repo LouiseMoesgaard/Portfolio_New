@@ -1,0 +1,55 @@
+@import "../../styles/base.scss";
+
+button {
+    cursor: pointer;
+    margin: 25px auto 5px auto;
+    display: block;
+
+  &.base {
+    width: 200px;
+    height: 40px;
+    left: 176px;
+    border-radius: 15px 0;
+  
+    background: $call-to-action-color1;
+    border: 1px solid $call-to-action-color1;
+    box-sizing: border-box;
+  }
+
+  &.yellow {
+    width: 200px;
+    height: 70px;
+    left: 176px;
+    border-radius: 15px 0;
+  
+    background: $call-to-action-color2;
+    border: 1px solid $call-to-action-color2;
+    box-sizing: border-box;
+
+    line-height: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  button {
+    margin: 25px auto 5px auto;
+
+  &.base {
+    width: 300px;
+    height: 45px;
+  }
+
+  &.yellow {
+    width: 300px;
+    height: 75px;
+
+
+    line-height: 25px;
+  }
+}
+
+}
+  
+ 

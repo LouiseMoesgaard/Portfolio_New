@@ -1,0 +1,239 @@
+@import '../../styles/base.scss';
+
+#frontpage{
+    @include page-padding-mobile;
+
+    .landingpage{
+        height: calc(100vh - 105px)!important;
+        
+        img{
+            border-radius: 50%;
+            width: 70%;
+            margin: 15px auto 30px auto;
+        }
+
+        .socials{
+            display: block;
+            margin: 15px auto;
+            width: 135px;
+
+            svg{
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                margin: 10px;
+                &.socialGitHub {
+                    .cls-1 {
+                        fill: #17515e;
+                        fill-rule: evenodd;
+                    }
+                }
+                &.socialLinkedIn {
+                    .cls-1 {
+                        fill: #fff;
+                    }
+                } 
+                &.socialMail {
+                    .cls-4 {
+                        fill: #15525e;
+                    }
+                    .cls-3 {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        .greybox{
+            margin: 0 -30px;
+            
+            button{
+                margin-top: 55px;
+            }
+
+            .titleTekst {
+                color: $font-black-color;
+                font-family: $p-font;
+                font-size: 1rem;
+                text-transform: none;
+            }
+
+            h1{
+                color: $font-blue-color;
+                font-family: $p-font;
+                font-size: 1.3rem;
+                margin: 30px 0 10px 0;
+                text-align: left;
+            }
+
+            p{
+                margin: 5px 0;
+                font-size: 0.9rem;
+                color: $font-black-color;
+            }
+        }
+    }
+
+    .aboutpage{
+        scroll-margin-top: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        img{
+            width: 80%;
+        }
+    }
+
+    .contactpage{
+        scroll-margin-top: 60px;
+        .greybox{
+            margin: 0 -30px;
+
+            svg {
+                height: 45%;
+                width: 45%;
+                margin: 45px auto;
+                display: block;
+            }
+        }
+    }
+}
+
+
+ @media only screen and (min-width: 1024px) {
+
+    #frontpage{
+
+        .landingpage{
+            display: grid;
+            grid-template-rows: calc(100vh - 120px);
+            grid-template-columns: 45% 55%;
+            
+            img{
+                width: 60%;
+                margin: 50px auto 50px auto;
+            }
+            hr {
+                width: 60%;
+            }
+    
+            .socials{
+                display: block;
+                margin: 10px auto;
+                width: 315px;
+    
+                svg{
+                    display: inline-block;
+                    height: 25px;
+                    width: 25px;
+                    margin: 40px;
+                    &.socialGitHub {
+                        .cls-1 {
+                            fill: #17515e;
+                            fill-rule: evenodd;
+                        }
+                    }
+                    &.socialLinkedIn {
+                        .cls-1 {
+                            fill: #fff;
+                        }
+                    } 
+                    &.socialMail {
+                        .cls-4 {
+                            fill: #15525e;
+                        }
+                        .cls-3 {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+    
+            .greybox{
+                margin: -120px -109px 0 0;
+                padding: 50% 14%;
+                
+                button{
+                    margin-top: 55px;
+                }
+    
+                .titleTekst {
+                    color: $font-black-color;
+                    font-family: $p-font;
+                    font-size: 1.4rem;
+                    text-transform: none;
+                }
+    
+                h1{
+                    color: $font-blue-color;
+                    font-family: $p-font;
+                    font-size: 2.9rem;
+                    margin: 30px 0 10px 0;
+                    text-align: left;
+                }
+    
+                p{
+                    margin: 5px 0;
+                    font-size: 0.9rem;
+                    color: $font-black-color;
+                }
+            }
+        }
+
+        .aboutpage{
+            @include page-padding-desktop-mini;
+            height: calc(100vh - 40px);
+
+            .gridWrapper{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 60% 40%;
+                margin-top: 100px;
+
+                p{
+                    margin: 0;
+                }
+
+                img{
+                    width: 70%;
+                    margin: 0;
+                    justify-self: end; 
+                    
+                }
+            }
+
+        }
+    
+        .contactpage{
+            @include page-padding-desktop-mini;
+            height: calc(100vh - 40px);
+
+            .gridWrapper{
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 50% 50%;
+                margin-top: 100px;
+                grid-template-areas: 
+                " svg div";
+
+                div{
+                    grid-area: div;
+                }
+
+                svg{
+                    grid-area: svg;
+                    height: 65%;
+                    width: 65%;
+                    margin: 0;
+                    justify-self: center;
+                    align-self: center;
+                }
+
+            }
+           
+        }
+    }   
+}
+
+/* @media only screen and (min-width: 2560px) {
+} */
